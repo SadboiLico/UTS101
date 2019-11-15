@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <TextView
+        android:id="@+id/tvminiq1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="All the questions should be answered with a yes or no."
+        />
+    
+    <TextView
+        android:id="@+id/tvminiq2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1. Ugly starts with u."
+        android:layout_below="@+id/tvminiq1"
+        />
+    
+    <EditText
+        android:id="@+id/etminiq1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Yes or No"
+        android:layout_below="@+id/tvminiq2"
+        />
+    
+    <Button
+        android:id="@+id/btnminiq1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_below="@+id/etminiq1"
+        />
+    
+    <TextView
+        android:id="@+id/tvminiq3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2. I don't know how you could read this, but I'm glad that we could reach out to you. Wake up, Neo! We need your help!"
+        android:layout_below="@+id/btnminiq1"
+        />
+    
+    <EditText
+        android:id="@+id/etminiq2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Yes or No"
+        android:layout_below="@+id/tvminiq3"
+        />
+    
+    <Button
+        android:id="@+id/btnminiq2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_below="@+id/etminiq2"
+        />
+    
+    <TextView
+        android:id="@+id/tvminiq4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3. Eipstein kill himself."
+        android:layout_below="@+id/btnminiq2"
+        />
+    
+    <EditText
+        android:id="@+id/etminiq3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Yes or No"
+        android:layout_below="@+id/tvminiq4"
+        />
+    
+    <Button
+        android:id="@+id/btnminiq3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_below="@+id/etminiq3"
+        />
+    
+    
+
+</RelativeLayout>

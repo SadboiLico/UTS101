@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <TextView
+        android:id="@+id/tvprofile1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NIM : 1833 0303 0020"
+        />
+    
+    <TextView
+        android:id="@+id/tvprofile2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NAME : NICHOLAS"
+        android:layout_below="@+id/tvprofile1"
+        />
+    
+    <TextView
+        android:id="@+id/tvprofile3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TASK : Sequences and series"
+        android:layout_below="@+id/tvprofile2"
+        />
+    
+
+</RelativeLayout>
