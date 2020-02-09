@@ -12,13 +12,13 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
-public class FragmentMathquestions extends Fragment{
+public class FragmentMatematika extends Fragment{
 	ListView lmathq1;
-	String[] menumate = {"Basic Arithmetic", "2D Shapes", "Sequences and Series"};
+	String[] menumate = {"Volume Bola", "Sudut segi N beraturan", "Baris Aritmatika"};
 	
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
-		View rootView = inflater.inflate(R.layout.fragment_mathquestions, container, false);
+		View rootView = inflater.inflate(R.layout.fragment_matematika, container, false);
 		
 		lmathq1 = (ListView)rootView.findViewById(R.id.lvmathq1);
 		ArrayAdapter<String> adapter = new ArrayAdapter<String>(getActivity(),
@@ -31,16 +31,24 @@ public class FragmentMathquestions extends Fragment{
 					long arg3) {
 				// TODO Auto-generated method stub
 				if(arg2 == 0){
-					Toast.makeText(getActivity(), "Guess again.", Toast.LENGTH_LONG).show();
+					FragmentVolumeBola fragmentvolumebola = new FragmentVolumeBola();
+					FragmentManager fragmentManager = getFragmentManager();
+					FragmentTransaction ft = fragmentManager.beginTransaction();
+					ft.replace(R.id.content_frame, fragmentvolumebola);
+					ft.commit();
 				}
 				else if(arg2 == 1){
-					Toast.makeText(getActivity(), "Not mine.", Toast.LENGTH_LONG).show();
+					FragmentSudutN fragmentsudutn = new FragmentSudutN();
+					FragmentManager fragmentManager = getFragmentManager();
+					FragmentTransaction ft = fragmentManager.beginTransaction();
+					ft.replace(R.id.content_frame, fragmentsudutn);
+					ft.commit();
 				}
 				else if(arg2 == 2){
-					FragmentSeq fragmentseq = new FragmentSeq();
+					FragmentBarisDeret fragmentbarisderet = new FragmentBarisDeret();
 					FragmentManager fragmentManager = getFragmentManager();
         			FragmentTransaction ft = fragmentManager.beginTransaction();
-        			ft.replace(R.id.content_frame, fragmentseq);
+        			ft.replace(R.id.content_frame, fragmentbarisderet);
         			ft.commit();
 				}
 			}

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <EditText
+        android:id="@+id/etsudut1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan jumlah sisi"
+        />
+    
+    <Button 
+        android:id="@+id/btnsudut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hitung"
+        android:layout_below="@+id/etsudut1"
+        />
+    
+    <TextView
+        android:id="@+id/tvsudut1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnsudut"
+        />
+    
+    <TextView
+        android:id="@+id/tvsudut2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvsudut1"
+        />
+    
+
+</RelativeLayout>

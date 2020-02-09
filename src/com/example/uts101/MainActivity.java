@@ -26,7 +26,7 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         
-        mTitle = "Drawer Menu";
+        mTitle = "Media Pembelajaran";
         getActionBar().setTitle(mTitle);
         
         mDrawerLayout=(DrawerLayout)findViewById(R.id.drawer_layout);
@@ -40,7 +40,7 @@ public class MainActivity extends Activity {
         		invalidateOptionsMenu();
         	}
         	public void onDrawerOpened(View drawerView){
-        		getActionBar().setTitle("Drawer Menu");
+        		getActionBar().setTitle("Media Pembelajaran");
         		invalidateOptionsMenu();
         	}
         	
@@ -66,19 +66,15 @@ public class MainActivity extends Activity {
         			ft.commit();
         		}
         		
-        		else if(mTitle.equals("Mini Questions")){
-        			FragmentMiniquestions fragmentminiquestions = new FragmentMiniquestions();
-        			FragmentManager fragmentManager = getFragmentManager();
-        			FragmentTransaction ft = fragmentManager.beginTransaction();
-        			ft.replace(R.id.content_frame, fragmentminiquestions);
-        			ft.commit();
+        		else if(mTitle.equals("Algoritma")){
+        			finish();
         		}
         		
-        		else if(mTitle.equals("Math Questions")){
-        			FragmentMathquestions fragmentmathquestions = new FragmentMathquestions();
+        		else if(mTitle.equals("Matematika")){
+        			FragmentMatematika fragmentmatematika = new FragmentMatematika();
         			FragmentManager fragmentManager = getFragmentManager();
         			FragmentTransaction ft = fragmentManager.beginTransaction();
-        			ft.replace(R.id.content_frame, fragmentmathquestions);
+        			ft.replace(R.id.content_frame, fragmentmatematika);
         			ft.commit();
         		}
         		

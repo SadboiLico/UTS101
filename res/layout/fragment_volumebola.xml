@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <EditText
+        android:id="@+id/etvolbola"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan Radius bola"
+        />
+    
+    <Button 
+        android:id="@+id/btnvolbola"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hitung"
+        android:layout_below="@+id/etvolbola"
+        />
+    
+    <TextView
+        android:id="@+id/tvvolbola1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnvolbola"
+        />
+    
+    <TextView
+        android:id="@+id/tvvolbola2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvvolbola1"
+        />
+    
+    <TextView
+        android:id="@+id/tvvolbola3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvvolbola2"
+        />
+
+</RelativeLayout>
